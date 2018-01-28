@@ -58,8 +58,7 @@ class CanarySensor(Entity):
     @property
     def unique_id(self):
         """Return the unique ID of this sensor."""
-        return "sensor_canary_{}_{}".format(self._device_id,
-                                            self._sensor_type.value)
+        return "{}_{}".format(self._device_id, self._sensor_type.value)
 
     @property
     def unit_of_measurement(self):
